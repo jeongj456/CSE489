@@ -278,7 +278,7 @@ int client(int argc, char **argv){
 			cse4589_print_and_log("%-5d%-35s%-20s%-8d\n", list_id, hostname, ip_addr, port_num)
 			cse4589_print_and_log("[%s:END]\n", msg)
 		}else if (strstr(msg, "LOGIN")){
-			LOGIN()//Implement login
+			LOGIN()//When a client logs in, print a list of clients that are currently on the server(should be in a list, look to see if there is a automatically resizing array in cstadard library)
 			cse4589_print_and_log("[%s:SUCCESS]\n", "LOGIN")
 			cse4589_print_and_log("%-5d%-35s%-20s%-8d\n", list_id, hostname, ip_addr, port_num)
 			cse4589_print_and_log("[%s:END]\n", "LOGIN")
